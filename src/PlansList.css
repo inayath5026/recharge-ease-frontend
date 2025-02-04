@@ -1,0 +1,10 @@
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+}

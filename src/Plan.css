@@ -1,0 +1,81 @@
+/* Plan Card Container */
+.plan-card {
+    background: linear-gradient(145deg, #004d40, #00796b); /* Trust theme */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 200px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Header Section */
+.plan-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffffff80;
+    padding-bottom: 15px;
+}
+
+.plan-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+.plan-subtitle {
+    font-size: 14px;
+    color: #e0f7fa;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Plan Details Section */
+.plan-details {
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.plan-data {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.plan-extras p {
+    font-size: 14px;
+    color: #b2dfdb;
+    margin: 5px 0;
+}
+
+/* Button Section */
+.plan-action-btn {
+    background-color: #004d40;
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.plan-action-btn:hover {
+    background-color: #00796b;
+    transform: scale(1.05);
+}
+
+/* Card Background */
+.plan-card {
+    background: #004d40;
+    background: linear-gradient(145deg, #004d40, #00796b);
+}

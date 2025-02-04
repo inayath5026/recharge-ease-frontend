@@ -1,0 +1,88 @@
+.payment-btn {
+    background: linear-gradient(135deg, #00796b, #004d40); /* Trust color gradient */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 121, 107, 0.3);
+    letter-spacing: 1px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Hover Effect */
+.payment-btn:hover {
+    background: linear-gradient(135deg, #004d40, #00796b);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 121, 107, 0.5);
+}
+
+/* Active/Click Effect */
+.payment-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px rgba(0, 121, 107, 0.3);
+}
+
+/* Disabled State */
+.payment-btn:disabled {
+    background: #b2dfdb;
+    color: #ffffff;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+.payment-btn:active::after {
+    opacity: 1;
+    transition: opacity 0s;
+}
+
+.mobile-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #00796b; /* Trust color */
+    border-radius: 8px;
+    outline: none;
+    background-color: #f7fdfc;
+    color: #004d40;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Placeholder styling */
+.mobile-input::placeholder {
+    color: #66a69d;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Focus Effect */
+.mobile-input:focus {
+    border-color: #004d40;
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.5);
+    background-color: #ffffff;
+}
+
+/* Disabled State */
+.mobile-input:disabled {
+    background-color: #e0f2f1;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Error State */
+.mobile-input.error {
+    border-color: #d32f2f;
+    background-color: #fff4f4;
+}
+
+.mobile-input.error::placeholder {
+    color: #d32f2f;
+}
