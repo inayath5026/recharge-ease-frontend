@@ -19,7 +19,7 @@ const Payment = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "https://thingproxy.freeboard.io/fetch/https://www.jio.com/api/jio-mdmdata-service/mdmdata/recharge/plans?productType=MOBILITY&billingType=1"
+        "https://www.jio.com/api/jio-mdmdata-service/mdmdata/recharge/plans?productType=MOBILITY&billingType=1"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
