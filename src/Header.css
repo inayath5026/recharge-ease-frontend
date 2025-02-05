@@ -1,0 +1,30 @@
+/* Container for logo */
+.logo {
+    font-family: 'Georgia', serif; /* Classic, elegant font */
+    color: #004d40; /* Trust-themed dark teal color */
+    font-size: 48px; /* Large size for impact */
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+    background-color: #e0f2f1; /* Soft background for the logo */
+    width: fit-content;
+    margin: 50px auto;
+}
+
+/* Accent for 'Recharge' part */
+.logo .accent {
+    color: #00796b; /* Lighter teal for the accent part */
+}
+
+/* Subtle hover effect */
+.logo:hover {
+    color: #004d40;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
